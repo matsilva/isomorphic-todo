@@ -1,9 +1,10 @@
 var React = require('react');
-var ListContainer = require('./ListContainer');
-var ListFactory = React.createFactory(ListContainer);
 
 var ListApp = React.createClass({
 	render: function() {
+    var Child = require(this.props.child);
+    var ChildFactory = React.createFactory(Child);
+    console.log(this.props.child);
 		return (
       <html>
         <head>
@@ -14,7 +15,7 @@ var ListApp = React.createClass({
         <div id="app">
           <div className="container">
             <div className="row">
-              {React.renderToString(ListFactory())}
+              {React.renderToString(ChildFactory())}
             </div>
           </div>
         </div>
