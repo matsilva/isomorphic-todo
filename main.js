@@ -11,19 +11,19 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req,res) {
 
-	res.setHeader('Content-Type', 'text/html');
+  res.setHeader('Content-Type', 'text/html');
   res.write("<!DOCTYPE html>");
   //Renders without React IDS
-	res.end(React.renderToStaticMarkup(MyApp()));	
+  res.end(React.renderToStaticMarkup(MyApp()));	
 
 });
 
 app.get('/titlefromserver', function(req,res) {
 
-	res.setHeader('Content-Type', 'text/html');
+  res.setHeader('Content-Type', 'text/html');
   res.write("<!DOCTYPE html>");
   //Renders without React IDS
-	res.end(React.renderToStaticMarkup(MyApp({metaTitle: "TitleFromServer"})));	
+  res.end(React.renderToStaticMarkup(MyApp({metaTitle: "TitleFromServer"})));	
 
 });
 
