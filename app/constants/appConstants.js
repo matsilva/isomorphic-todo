@@ -1,7 +1,7 @@
 
 var appConstants = {
   ADD_ITEM: "ADD_ITEM",
-  REMOVE_ITEM: "REMOVE_ITEM",
 };
+//TODO add REMOVE_ITEM constant
 
 module.exports = appConstants;

@@ -4,11 +4,11 @@ var ListContainer = require('./components/ListContainer');
 var App = React.createClass({
 	render: function(){
 		return (
-			<div className="container">
-        <div className="row">
-          <ListContainer />
-        </div>
-			</div>
+                <div className="container">
+                    <div className="row">
+                        <ListContainer />
+                    </div>
+                </div>
 		);
 	}
 });

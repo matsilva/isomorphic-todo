@@ -11,15 +11,7 @@ var todoActions = {
     });
 
   },
-  
-  removeItem: function(i) {
-
-    AppDispatcher.handleAction({
-      actionType: appConstants.REMOVE_ITEM,
-      data: i
-    });
-
-  }
 };
+//TODO add removeItem action
 
 module.exports = todoActions;
